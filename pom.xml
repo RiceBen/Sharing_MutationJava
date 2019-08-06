@@ -19,7 +19,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.pitest/pitest -->
@@ -27,7 +27,6 @@
       <groupId>org.pitest</groupId>
       <artifactId>pitest-maven</artifactId>
       <version>1.4.9</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 
@@ -87,12 +86,11 @@
           </executions>
           <configuration>
             <targetClasses>
-              <param>com.ben.app.Calculator</param>
+              <param>com.ben.app.Palindrome</param>
             </targetClasses>
             <targetTests>
               <param>com.ben.app.*</param>
             </targetTests>
-            <verbose>true</verbose>
           </configuration>
         </plugin>
       </plugins>

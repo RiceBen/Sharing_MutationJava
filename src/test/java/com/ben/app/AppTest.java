@@ -1,8 +1,8 @@
 package com.ben.app;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
 /**
  * Unit test for simple App.
  */
@@ -15,12 +15,23 @@ public class AppTest
     public void testApp()
     {
         // arrange
-        int except = 25;
-        Calculator ca = new Calculator();
+        boolean except = false;
+        Palindrome palindrome = new Palindrome();
 
         // act
-        int result = ca.Add(10, 15);
+        boolean result = palindrome.isPalindrome("Madam");
         // assert
         assertEquals(except, result);
     }
+    
+    // @Test
+    // public void testEmptyApp(){
+    //     // arrange
+    //     boolean except = true;
+    //     Palindrome palindrome = new Palindrome();
+    //     // act
+    //     boolean result = palindrome.isPalindrome("");
+    //     // assert
+    //     assertEquals(except, result);
+    // }
 }
