@@ -8,4 +8,12 @@ updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
+      day: "monday"
+      time: "08:00"
+      timezone: "Asia/Taipei"
+    # Disable all pull requests for Docker dependencies
+    open-pull-requests-limit: 0
+    commit-message:
+      prefix: "[Bot]"
+      include: "scope"
